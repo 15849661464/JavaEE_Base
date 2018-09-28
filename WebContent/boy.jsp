@@ -6,6 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+<%
+	String s=request.getParameter("username");
+	out.print(s);
+%>
+
 <body bgcolor="blue">
 
 <h1>Boy's page 1</h1>
