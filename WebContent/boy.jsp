@@ -7,8 +7,14 @@
 <title>Insert title here</title>
 </head>
 <%
-	String s=request.getParameter("username");
-	out.print(s);
+	//Session 中不允许存放 boolean 型变量
+	String b=(String)session.getAttribute("login");	
+
+	if(!"true".equals(b)){
+		response.sendRedirect("login.jsp");
+	}
+
+	
 %>
 
 <body bgcolor="blue">

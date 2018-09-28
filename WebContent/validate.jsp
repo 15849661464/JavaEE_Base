@@ -5,6 +5,7 @@
 	String password = (String)request.getParameter("password");
 	if("zuoyan".equals(username)&&"zuoyantest".equals(password))
 	{
+		session.setAttribute("login","true");
 		out.print("登录成功！");
 		out.print("<a href='boy.jsp'>To Boy's Page</a>");
 	}
