@@ -6,6 +6,7 @@
 	if("zuoyan".equals(username)&&"zuoyantest".equals(password))
 	{
 		out.print("登录成功！");
+		out.print("<a href='boy.jsp'>To Boy's Page</a>");
 	}
 	else if(!"zuoyan".equals(username))
 	{
